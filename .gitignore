@@ -1,0 +1,38 @@
+# MacOS
+.DS_Store
+
+# Project
+.idea/
+.fleet/
+.vscode/
+/temp/
+*.log
+*.log*
+
+
+# lib files
+out/
+*.out
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Python
+__pychache__
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
