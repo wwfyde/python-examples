@@ -1,7 +1,8 @@
-# MacOS
+### MacOS
 .DS_Store
+Icon?
 
-# Project
+### Project
 .idea/
 .fleet/
 .vscode/
@@ -15,7 +16,7 @@ out/
 *.out
 
 
-# Environments
+### Environments
 .env
 .venv
 env/
@@ -25,9 +26,10 @@ env.bak/
 venv.bak/
 
 
-# Python
+### Python
 __pychache__
 *.pyc
+.pytest_cache
 
 # Jupyter Notebook
 .ipynb_checkpoints
