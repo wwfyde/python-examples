@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-examples"
+version = "0.1.0"
+description = ""
+authors = ["wwfyde <wwfyde@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gradio = "^4.5.0"
+fastapi = {extras = ["all"], version = "^0.104.1"}
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.0.9"
+notebook = "^7.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
