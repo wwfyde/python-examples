@@ -19,9 +19,9 @@ out/
 ### Environments
 .env
 .venv
-env/
+dotenv_/
 venv/
-ENV/
+dotenv_/
 env.bak/
 venv.bak/
 
