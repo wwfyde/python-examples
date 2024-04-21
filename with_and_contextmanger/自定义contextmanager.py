@@ -12,5 +12,5 @@ def do_something():
 
 
 # do 是 yield 返回的对象
-with do_something() as do:
-    print(do)
+with do_something() as ctx:
+    print(ctx)
