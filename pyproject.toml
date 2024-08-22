@@ -20,11 +20,17 @@ python-benedict = { extras = ["all"], version = "^0.33.2" }
 tqdm = "^4.66.2"
 openai = "^1.19.0"
 litellm = "^1.35.16"
+textual = "^0.57.1"
+redis = "^5.0.3"
+playwright = "^1.45.0"
 
 
 [tool.poetry.group.dev.dependencies]
 jupyterlab = "^4.0.9"
 notebook = "^7.0.6"
+types-redis = "^4.6.0.20240425"
+sqlalchemy-stubs = "^0.4"
+aiodns = "^3.2.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -9,14 +9,17 @@ async def main() -> None:
     )
 
     async with connection:
-        routing_key = "test_queue"
+        routing_key = "molook"
 
         channel = await connection.channel()
-        exchange = await channel.declare_exchange('molook', durable=True, type=aio_pika.ExchangeType.TOPIC)
-        await exchange.publish(
-            aio_pika.Message(body=f"Hello {routing_key}".encode()),
+
+        # exchange = await channel.declare_exchange('molook', durable=True, type=aio_pika.ExchangeType.TOPIC)
+        body = f"Hello {routing_key}".encode()
+        await channel.default_exchange.publish(
+            aio_pika.Message(body=body),
             routing_key=routing_key,
         )
+        print(body)
 
 
 if __name__ == "__main__":
