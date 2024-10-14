@@ -174,15 +174,18 @@ jupyter-server==2.14.2
     # via jupyter-lsp
     # via jupyterlab
     # via jupyterlab-server
+    # via notebook
     # via notebook-shim
 jupyter-server-terminals==0.5.3
     # via jupyter-server
 jupyterlab==4.2.5
+    # via notebook
     # via python-examples
 jupyterlab-pygments==0.3.0
     # via nbconvert
 jupyterlab-server==2.27.3
     # via jupyterlab
+    # via notebook
 kiwisolver==1.4.7
     # via matplotlib
 markdown-it-py==3.0.0
@@ -218,8 +221,11 @@ nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.3
     # via torch
+notebook==7.2.2
+    # via python-examples
 notebook-shim==0.2.4
     # via jupyterlab
+    # via notebook
 numpy==2.1.1
     # via contourpy
     # via datasets
@@ -380,6 +386,7 @@ tornado==6.4.1
     # via jupyter-client
     # via jupyter-server
     # via jupyterlab
+    # via notebook
     # via terminado
 tqdm==4.66.5
     # via datasets
