@@ -17,6 +17,8 @@ aiohttp==3.10.5
     # via fsspec
 aiosignal==1.3.1
     # via aiohttp
+altair==5.4.1
+    # via python-examples
 annotated-types==0.7.0
     # via pydantic
 anyio==4.4.0
@@ -47,6 +49,8 @@ beautifulsoup4==4.12.3
     # via nbconvert
 bleach==6.1.0
     # via nbconvert
+bokeh==3.6.0
+    # via python-examples
 certifi==2024.8.30
     # via httpcore
     # via httpx
@@ -61,6 +65,7 @@ click==8.1.7
 comm==0.2.2
     # via ipykernel
 contourpy==1.3.0
+    # via bokeh
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
@@ -136,6 +141,8 @@ itsdangerous==2.2.0
 jedi==0.19.1
     # via ipython
 jinja2==3.1.4
+    # via altair
+    # via bokeh
     # via fastapi
     # via jupyter-server
     # via jupyterlab
@@ -149,6 +156,7 @@ json5==0.9.25
 jsonpointer==3.0.0
     # via jsonschema
 jsonschema==4.23.0
+    # via altair
     # via jupyter-events
     # via jupyterlab-server
     # via nbformat
@@ -209,6 +217,8 @@ multidict==6.1.0
     # via yarl
 multiprocess==0.70.16
     # via datasets
+narwhals==1.9.3
+    # via altair
 nbclient==0.10.0
     # via nbconvert
 nbconvert==7.16.4
@@ -227,6 +237,7 @@ notebook-shim==0.2.4
     # via jupyterlab
     # via notebook
 numpy==2.1.1
+    # via bokeh
     # via contourpy
     # via datasets
     # via matplotlib
@@ -241,6 +252,8 @@ orjson==3.10.7
 overrides==7.7.0
     # via jupyter-server
 packaging==24.1
+    # via altair
+    # via bokeh
     # via datasets
     # via huggingface-hub
     # via ipykernel
@@ -251,6 +264,7 @@ packaging==24.1
     # via nbconvert
     # via plotly
 pandas==2.2.3
+    # via bokeh
     # via datasets
 pandocfilters==1.5.1
     # via nbconvert
@@ -259,6 +273,7 @@ parso==0.8.4
 pexpect==4.9.0
     # via ipython
 pillow==10.4.0
+    # via bokeh
     # via matplotlib
     # via torchvision
 pip==24.2
@@ -266,6 +281,8 @@ pip==24.2
 platformdirs==4.3.6
     # via jupyter-core
 plotly==5.24.1
+    # via python-examples
+polars==1.9.0
     # via python-examples
 prometheus-client==0.21.0
     # via jupyter-server
@@ -314,6 +331,7 @@ python-multipart==0.0.9
 pytz==2024.2
     # via pandas
 pyyaml==6.0.2
+    # via bokeh
     # via datasets
     # via fastapi
     # via huggingface-hub
@@ -382,6 +400,7 @@ torch==2.4.1
 torchvision==0.19.1
     # via python-examples
 tornado==6.4.1
+    # via bokeh
     # via ipykernel
     # via jupyter-client
     # via jupyter-server
@@ -410,6 +429,7 @@ typer==0.12.5
 types-python-dateutil==2.9.0.20240906
     # via arrow
 typing-extensions==4.12.2
+    # via altair
     # via fastapi
     # via huggingface-hub
     # via openai
@@ -445,5 +465,7 @@ websockets==13.0.1
     # via uvicorn
 xxhash==3.5.0
     # via datasets
+xyzservices==2024.9.0
+    # via bokeh
 yarl==1.12.1
     # via aiohttp

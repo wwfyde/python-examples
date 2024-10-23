@@ -1,3 +1,6 @@
 [submodule "py313"]
 	path = py313
 	url = https://github.com/wwfyde/py313.git
+[submodule "cli"]
+	path = cli
+	url = https://github.com/wwfyde/python-cli.git

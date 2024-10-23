@@ -28,7 +28,4 @@ def read_file(f: FilePath, mode: str = 'r') -> Dict[str, str]:
 
 
 if __name__ == '__main__':
-    print(read_file('计算机专业术语对照.md'))
-
-
-
+    print(read_file('read_term_file/计算机专业术语对照.md'))
