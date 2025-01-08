@@ -9,7 +9,6 @@
 #   generate-hashes: false
 #   universal: false
 
--e file:.
 aiohappyeyeballs==2.4.0
     # via aiohttp
 aiohttp==3.10.5
@@ -18,7 +17,6 @@ aiohttp==3.10.5
 aiosignal==1.3.1
     # via aiohttp
 altair==5.4.1
-    # via python-examples
 annotated-types==0.7.0
     # via pydantic
 anyio==4.4.0
@@ -50,7 +48,6 @@ beautifulsoup4==4.12.3
 bleach==6.1.0
     # via nbconvert
 bokeh==3.6.0
-    # via python-examples
 certifi==2024.8.30
     # via httpcore
     # via httpx
@@ -71,7 +68,6 @@ contourpy==1.3.0
 cycler==0.12.1
     # via matplotlib
 datasets==3.0.0
-    # via python-examples
 debugpy==1.8.5
     # via ipykernel
 decorator==5.1.1
@@ -90,7 +86,6 @@ email-validator==2.2.0
 executing==2.1.0
     # via stack-data
 fastapi==0.114.1
-    # via python-examples
 fastapi-cli==0.0.5
     # via fastapi
 fastjsonschema==2.20.0
@@ -135,7 +130,6 @@ ipykernel==6.29.5
 ipython==8.27.0
     # via ipykernel
     # via ipywidgets
-    # via python-examples
 ipywidgets==8.1.5
 isoduration==20.11.0
     # via jsonschema
@@ -191,7 +185,6 @@ jupyter-server-terminals==0.5.3
     # via jupyter-server
 jupyterlab==4.2.5
     # via notebook
-    # via python-examples
 jupyterlab-pygments==0.3.0
     # via nbconvert
 jupyterlab-server==2.27.3
@@ -207,7 +200,6 @@ markupsafe==2.1.5
     # via jinja2
     # via nbconvert
 matplotlib==3.9.2
-    # via python-examples
 matplotlib-inline==0.1.7
     # via ipykernel
     # via ipython
@@ -237,7 +229,6 @@ nest-asyncio==1.6.0
 networkx==3.3
     # via torch
 notebook==7.2.2
-    # via python-examples
 notebook-shim==0.2.4
     # via jupyterlab
     # via notebook
@@ -248,10 +239,8 @@ numpy==2.1.1
     # via matplotlib
     # via pandas
     # via pyarrow
-    # via python-examples
     # via torchvision
 openai==1.44.1
-    # via python-examples
 orjson==3.10.7
     # via fastapi
 overrides==7.7.0
@@ -277,18 +266,15 @@ parso==0.8.4
     # via jedi
 pexpect==4.9.0
     # via ipython
-pillow==10.4.0
+pillow==11.0.0
     # via bokeh
     # via matplotlib
     # via torchvision
 pip==24.2
-    # via python-examples
 platformdirs==4.3.6
     # via jupyter-core
 plotly==5.24.1
-    # via python-examples
 polars==1.9.0
-    # via python-examples
 prometheus-client==0.21.0
     # via jupyter-server
 prompt-toolkit==3.0.47
@@ -347,7 +333,6 @@ pyzmq==26.2.0
     # via jupyter-client
     # via jupyter-server
 redis==5.0.8
-    # via python-examples
 referencing==0.35.1
     # via jsonschema
     # via jsonschema-specifications
@@ -393,17 +378,14 @@ sympy==1.13.3
     # via torch
 tenacity==9.0.0
     # via plotly
-    # via python-examples
 terminado==0.18.1
     # via jupyter-server
     # via jupyter-server-terminals
 tinycss2==1.3.0
     # via nbconvert
 torch==2.4.1
-    # via python-examples
     # via torchvision
 torchvision==0.19.1
-    # via python-examples
 tornado==6.4.1
     # via bokeh
     # via ipykernel

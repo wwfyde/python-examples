@@ -10,7 +10,8 @@ def iso_str_now(exclude_microseconds: bool = True) -> str:
     if exclude_microseconds:
         # return datetime.now().astimezone().replace(microsecond=0).strftime("%Y-%m-%dT%H:%M:%S%z")
         # return datetime.now().astimezone().replace(microsecond=0).isoformat()
-        return datetime.now().astimezone().isoformat(timespec='seconds')
+        # return datetime.now().astimezone().isoformat(timespec='seconds')
+        return datetime.now().isoformat(timespec='seconds')
 
     return datetime.now().isoformat()
 
