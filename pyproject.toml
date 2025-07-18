@@ -8,7 +8,7 @@ authors = [
 dependencies = [
     "pip>=24.2",
     "fastapi[all]>=0.114.1",
-    "openai>=1.44.1",
+    "openai>=1.78.0",
     "redis>=5.0.8",
     "tenacity>=9.0.0",
     "ipython>=8.27.0",
@@ -24,12 +24,20 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "pillow>=11.0.0",
     "nacos-sdk-python>=1.0.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+    "torchaudio>=2.5.1",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"
 
 [project.scripts]
 "python-examples" = "python_examples:main"
+
+[project.optional-dependencies]
+standard = [
+    "orjson>=3.10.12",
+]
 
 [tool.uv]
 package = true
@@ -46,6 +54,12 @@ dev = [
     "jupyterlab>=4.3.4",
     "notebook>=7.3.2",
     "pip>=24.3.1",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.25.3",
+]
+pytorch = [
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
 ]
 
 
@@ -61,5 +75,18 @@ dev-dependencies = [
 [tool.hatch.metadata]
 allow-direct-references = true
 
+[tool.hatch.build]
+include = [
+    "src/python_examples",
+    "config",
+    "recipes",
+]
+
 [tool.hatch.build.targets.wheel]
-packages = ["src/python_examples"]
+packages = [
+    "src/python_examples",
+    "config",
+    "recipes",
+    "packages/demo"
+]
+
