@@ -1,0 +1,56 @@
+### MacOS
+.DS_Store
+Icon?
+
+### Project
+.idea/
+.fleet/
+.vscode/
+/temp/
+*.log
+*.log*
+
+
+# lib files
+out/
+*.out
+
+
+### Environments
+.venv/
+usages/use-dotenv/
+venv/
+usages/use-dotenv/
+env.bak/
+venv.bak/
+
+### Configurations & Secrets
+# env file
+*.local
+.env
+.env.*
+!.env.example
+
+# toml
+*.local.toml
+config.toml
+config.*.toml
+!config.example.toml
+!*.example.toml
+
+
+### Python
+__pychache__
+*.pyc
+.pytest_cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# poetry
+poetry.lock
+

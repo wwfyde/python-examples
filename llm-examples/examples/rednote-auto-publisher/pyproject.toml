@@ -1,0 +1,9 @@
+[project]
+name = "rednote-auto-publisher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "xhs-mcp-server>=0.2.5",
+]

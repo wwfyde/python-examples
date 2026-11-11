@@ -1,0 +1,104 @@
+[project]
+name = "llm-examples"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=1.55.0",
+    "langchain>=1.0.3",
+    "langchain-core>=1.0.2",
+    "langchain-deepseek>=1.0.1",
+    "langchain-google-genai>=4",
+    "langchain[openai, google-genai]>=1.0.1",
+    "langgraph>=1.0.2",
+    "langgraph-cli[inmem]>=0.4.5",
+    "lib",
+    "openai>=2.6.1",
+    "pillow>=11.3.0",
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.10.1",
+    "structlog>=25.5.0",
+    "tenacity>=9.1.2",
+]
+
+[project.scripts]  # not work, the main pyproject is not a package, write it in corresponding pyproject.toml
+# example = "cd examples && uvicorn minimal_api:app"
+demo = "examples.minimal_api:main"
+init = "main:main"
+mcp = "my_mcp_server:run"
+
+[dependency-groups]
+dev = [
+    "ipython>=9.1.0",
+    "jupyterlab>=4.4.7",
+    "notebook>=7.4.3",
+    "pip>=25.1.1",
+    "uv-build>=0.9.2",
+]
+agno = [
+    "duckduckgo-search>=8.0.4",
+    "exa-py>=1.14.12",
+    "lxml-html-clean>=0.4.2",
+    "newspaper4k>=0.9.3.1",
+    "yfinance>=0.1.96",
+]
+examples = [
+    "qdrant-client>=1.14.1",
+]
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.ruff]
+# https://docs.astral.sh/ruff/settings/
+line-length = 100
+output-format = "grouped"
+# ignore = ["E731"]
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = [
+    "F841",
+    "F401",  # remove unused imports
+]
+
+[tool.ruff.lint.isort]
+length-sort = true
+length-sort-straight = true
+combine-as-imports = true
+extra-standard-library = ["typing_extensions", "pydantic", "openai"]
+known-first-party = ["api", "lib"]
+known-third-party = ["fastapi"]
+
+[tool.ruff.format]
+preview = true
+exclude = [
+    "F841",  # Ignore unused variable warnings
+    "E501",  # Ignore line length warnings
+    "F401",  # remove unused imports
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = [
+    "examples/openai_agents_examples",
+    "examples/simple_qdrant_app",
+    "examples/qwen-agent-examples",
+    "packages/*",
+    "examples/rednote-auto-publisher",
+    "agno-app",
+    "llm-providers",
+    "lib",
+    "openai-agent-app",
+    "multi-agent-langgraph",
+]
+exclude = ["packages/seeds", "packages/agno-app"]
+
+[tool.uv.sources]
+qwen-agent-examples = { workspace = true }  # 定义为工作区
+# agno-app = { workspace = true }  # 定义为工作区
+lib = { workspace = true }

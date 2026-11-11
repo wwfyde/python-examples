@@ -1,0 +1,22 @@
+[project]
+name = "libs-config"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "wwfyde", email = "wwfyde@gmail.com" }]
+dependencies = [
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.12.0",
+]
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
+
+[tool.uv.build-backend]
+namespace = true
+module-name = "libs.config"

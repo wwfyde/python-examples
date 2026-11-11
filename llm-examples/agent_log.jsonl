@@ -1,0 +1,33 @@
+{
+    "type": "human",
+    "content": "告诉我上海现在的天气怎么样？",
+    "tool_calls": [],
+    "name": null
+}
+{
+    "type": "ai",
+    "content": "",
+    "tool_calls": [
+        {
+            "name": "search_weather",
+            "args": {
+                "location": "上海"
+            },
+            "id": "call_FhrTTepoHEKUtRqavY5wZZJU",
+            "type": "tool_call"
+        }
+    ],
+    "name": null
+}
+{
+    "type": "tool",
+    "content": "上海 的天气晴，25°C。",
+    "tool_calls": [],
+    "name": "search_weather"
+}
+{
+    "type": "ai",
+    "content": "上海现在晴，气温约25°C。\n\n出门请注意防晒，适合穿轻便夏日装。如果你想看未来几天的天气预报，或者需要我设提醒，请告诉我。",
+    "tool_calls": [],
+    "name": null
+}

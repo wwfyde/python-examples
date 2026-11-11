@@ -1,0 +1,4 @@
+[env]
+ANTHROPIC_AUTH_TOKEN = "sk-lF54JuPTpO9R0TbvVHu02QVfpda6S4d8h7PM9qL2yvH5Ibz8"
+ANTHROPIC_BASE_URL = "https://jp.duckcoding.com"
+ANTHROPIC_API_KEY = ""

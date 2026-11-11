@@ -1,0 +1,43 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+
+
+.DS_Store
+.idea
+
+### projects
+temp/
+
+### Configuration
+# env file and config
+.env
+.env.dev
+.env.staging
+.env.development
+.env.prod
+.env.production
+*.local
+
+*.local.yml
+config.yml
+config.dev.yml
+config.prod.yml
+config.staging.yml
+config.test.yml
+
+config.toml
+*.local.toml
+config.dev.toml
+config.prod.toml
+config.staging.toml
+config.test.toml

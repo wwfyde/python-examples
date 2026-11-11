@@ -1,0 +1,18 @@
+[project]
+name = "examples"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "wwfyde", email = "wwfyde@gmail.com" }]
+dependencies = []
+
+[project.scripts]
+lib = "lib:main"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
